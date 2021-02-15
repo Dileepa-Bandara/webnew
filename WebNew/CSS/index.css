@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    right: 0;
+    top: 0;
+    /* display: none; */
+    transition-delay: 0.5;
+    transition-duration: 1s;
+}
+
+.container.activeright {
+    right: 25%;
+}
+
+
+/* video */
+
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+/* header */
+
+.header {
+    position: absolute;
+    z-index: 10;
+    background: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #282b36, darkblue);
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header ul li {
+    padding: 10px;
+    /* flex-grow: 1; */
+}
+
+.header ul li a img {
+    width: 100px;
+    height: 50px;
+    background: white;
+}
+
+.header ul li p {
+    text-decoration: none;
+    background: linear-gradient(45deg, red, #db640e);
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 800;
+    transition: 0.3s;
+    color: white;
+}
+
+.header ul li p:hover {
+    background: linear-gradient(45deg, purple, red);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.header ul li a {
+    background: #2c58f5;
+    width: 200px;
+    padding: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border: none;
+    display: block;
+}
+
+.header ul li a:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+#myBar {
+    position: absolute;
+    width: 1%;
+    height: 4px;
+    background: linear-gradient(45deg, red, orange);
+    bottom: 0;
+    width: 100%;
+    right: 0;
+}
+
+svg {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+}
+
+.logincontainer {
+    z-index: -100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container1 {
+    flex-grow: 3;
+    height: 90vh;
+}
+
+.container2 {
+    flex-grow: 1;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginform {
+    position: absolute;
+    background: linear-gradient(45deg, purple, darkblue);
+    width: 23%;
+    height: 80vh;
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.loginform img {
+    height: 100px;
+    width: 100px;
+}
+
+.loginform input {
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 8px;
+}
+
+.loginform button {
+    text-align: center;
+    padding: 8px;
+    width: 60%;
+    background: linear-gradient(45deg, red, orange);
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*register form*/
+
+.register-container {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+    display: none;
+}
+
+.register-form {
+    background-color: #fefefe;
+    margin: 50px auto;
+    border: 1px solid #888;
+    width: 90%;
+    height: 1500px;
+    padding: 25px;
+}
+
+.registerinput {
+    display: flex;
+    flex-direction: column;
+}
+
+.registerinput>label {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: medium;
+    font-weight: 800;
+    margin-top: 25px;
+}
+
+.registerinput>input {
+    height: 30px;
+    padding: 8px;
+    font-size: medium;
+    color: #474e5d;
+    border: none;
+    border-bottom: solid 1px blue;
+    outline: none;
+}
+
+.registerinput>input:focus {
+    background-color: lightgray;
+}
+
+.registerinput button {
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: larger;
+    font-weight: 900;
+    background: linear-gradient(45deg, purple, darkblue);
+}

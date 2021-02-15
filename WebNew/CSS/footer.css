@@ -1,0 +1,47 @@
+.footer {
+  background: #282b36;
+  width: 100%;
+  height: 300px;
+  padding: 5px;
+  position: relative;
+  bottom: 0;
+  margin-top: 150px;
+}
+
+.footer .one {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.footer .two {
+  display: flex;
+  height: 230px;
+  width: 100%;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+.footer .two div {
+  height: 180px;
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer .two a {
+  text-decoration: none;
+  color: white;
+}
+.footer .two h3 {
+  color: white;
+}
+.footer .two p {
+  margin-top: 10px;
+}
